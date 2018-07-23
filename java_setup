@@ -1,0 +1,13 @@
+１．首先要去下载好JDK，Java SE 8的官方网址是http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+2   tar -zxvf
+
+3  然后我们来新建一个目录，并将解压好的文件移动过去 
+
+mkdir /usr/java
+
+4 先用vim打开/etc/profile文件
+JAVA_HOME=/usr/java/jdk1.8.0_181
+export JRE_HOME=/usr/java/jdk1.8.0_181/jre 
+export CLASSPATH=.:${JAVA_HOME}/lib:${JAVA_HOME}/lib
+export PATH=${JAVA_HOME}/bin:$PATH
