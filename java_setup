@@ -8,5 +8,6 @@ mkdir /usr/java
 
 4.  先用vim打开/etc/profile文件
 export JAVA_HOME=/usr/java/jdk1.8.0_181
-export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+export JRE_HOME=/usr/java/jdk1.8.0_181/jre
+export CLASSPATH=.:$JRE_HOME/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 export PATH=$JAVA_HOME/bin:$PATH
